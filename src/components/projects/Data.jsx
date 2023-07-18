@@ -1,5 +1,5 @@
 import Work1 from '../../assets/Work1.jpg'
-import Work2 from '../../assets/Work2.jpg'
+import Work2 from '../../assets/Work2.png'
 import Work3 from '../../assets/Work3.jpg'
 import Work4 from '../../assets/Work4.jpg'
 
@@ -13,19 +13,19 @@ export const projectsData =[
 {
     id: 2,
     image: Work2,
-    title: 'Web Design',
+    title: 'TO Do List Using React and REST API',
     category: 'web'
 },
 {
     id: 3,
     image: Work3,
-    title: 'Web Design',
+    title: 'Real Time Traffic Sign Detector',
     category: 'Other'
 },
 {
     id: 4,
     image: Work4,
-    title: 'Web Design',
+    title: 'Accent Detector ML Model',
     category: 'web'
 },
 ];
