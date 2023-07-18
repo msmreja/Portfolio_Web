@@ -1,5 +1,4 @@
 import React from 'react';
-import Details from './Details';
 
 const ProjectItems = ({item}) => {
     return (
