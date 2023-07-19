@@ -1,4 +1,5 @@
 import React from 'react';
+import PopOver from './PopOver';
 
 const ProjectItems = ({item}) => {
     return (
@@ -7,8 +8,8 @@ const ProjectItems = ({item}) => {
             <h3 className="work__title">{item.title}</h3>
             <button onClick={console.log("Pop UP")} className='work__button'>
                 Details <i className="bx bx-right-arrow-alt work__button-icon"></i>
-            <Details />
             </button>
+            <PopOver />
         </div>
     );
 };

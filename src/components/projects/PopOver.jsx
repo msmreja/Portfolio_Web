@@ -9,7 +9,7 @@ function PopOver(props) {
   return (
     <div>
       <Button color="danger" onClick={toggle}>
-        Click Me
+        Details
       </Button>
       <Modal isOpen={modal} toggle={toggle} fullscreen>
         <ModalHeader toggle={toggle}>Modal title</ModalHeader>
