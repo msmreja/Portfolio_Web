@@ -59,3 +59,25 @@
 .work__button:hover .work__button-icon {
     transform: translateY(0.25rem);
 }
+
+.modal__container{
+    position: relative;
+    align-self: center;
+    margin-top: 100px;
+
+}
+
+.modal-content{
+    width: 80%;
+    height: 45rem;
+    background-color: beige;
+    border-radius: 1rem;
+    align-self: center;
+    padding: 1rem;
+    margin: 200px;
+    margin-top: -50rem;
+    margin-right: -300px;
+}
+.modal-footer{
+        margin-top: 50%;
+    }
