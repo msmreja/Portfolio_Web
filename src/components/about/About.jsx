@@ -1,7 +1,7 @@
 import React from 'react';
 import './about.css';
 import AboutImg from '../../assets/about.jpg'
-import CV from "../../assets/John-Cv.pdf";
+import CV from "../../assets/msmreja.pdf";
 import Info from './info';
 
 
@@ -18,7 +18,7 @@ function about(props) {
                     <Info />
 
                     <p className="about__description">Fornt end developer developer I have created webpages which have great style and desgine</p>
-                    <a download={' '} href={CV} className='button buttn-flex'>Download Resume
+                    <a download={'Masum Reja_Resume'} href={CV} className='button buttn-flex'>Download Resume
                     <svg
                             class="button__icon"
                             xmlns="http://www.w3.org/2000/svg"
