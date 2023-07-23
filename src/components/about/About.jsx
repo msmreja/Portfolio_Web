@@ -10,14 +10,14 @@ function about(props) {
         <div>
             <section className="about section" id="about"></section>
             <h2 className="section__title">About Me</h2>
-            <span className="section__subtitle">Bachlore of Technology in Computer Science and Engineering</span>
+            <span className="section__subtitle">Bachelors of Technology in Computer Science and Engineering</span>
 
             <div className="about__container container grid">
                 <img src={AboutImg} alt="" className="about__img" />
                 <div className="about__data">
                     <Info />
 
-                    <p className="about__description">Fornt end developer developer I have created webpages which have great style and desgine</p>
+                    <p className="about__description">I have created WebPages which have great style and design</p>
                     <a download={'Masum Reja_Resume'} href={CV} className='button buttn-flex'>Download Resume
                     <svg
                             class="button__icon"
