@@ -5,24 +5,22 @@ const Qualification = () => {
     return (
         <div>
         <section className="qualification__section">
-            <h2 className="section__subtitle">Qualification</h2>
+            <h2 className="section__title">Qualification</h2>
             <span className="section__subtitle">My Journey</span>
-
             <div className="qualification__container container">
-                <div className="qualifiaction__tabs">
-                    <div className="qualifation__button button--flex">
+                <div className="qualification__tabs">
+                    <div className="qualification__button qualification__active button--flex">
                         <i className="uil uil-graduation-cap qualifaction__icon"></i> {" "}
                         Education
                     </div>
-
                 </div>
-                <div className="qualification__section">
-                    <div className="qualifiacation__content">
+                <div className="qualification__sections">
+                    <div className="qualification__content">
                         <div className="qualification__data">
                             <div className="">
-                                <h3 className="qualification__subtitle"></h3>
-                                <span className="qualification__subtitle">Samskruti College of Engg. & Tech.</span>
-                                <div className="qualification__calendar-alt">
+                                <h3 className="qualification__title">Samskruti College of Engg. & Tech.</h3>
+                                <span className="qualification__subtitle">Ghatkesar, Hyderabad</span>
+                                <div className="qualification__calendar">
                                     <i className="uil uil-calendar-alt"></i>
                                     2023 Present
                                 </div>
@@ -30,15 +28,33 @@ const Qualification = () => {
                         
                         <div>
                             <span className="qualification__rounder"></span>
-                            <div className="qualification__line"></div>
+                            <span className="qualification__line"></span>
                         </div>
                         </div>
 
                         <div className="qualification__data">
+                            <div></div>
+
+                        <div>
+                            <span className="qualification__rounder"></span>
+                            <span className="qualification__line"></span>
+                        </div>
+
                             <div className="">
-                                <h3 className="qualification__subtitle"></h3>
-                                <span className="qualification__subtitle">Samskruti College of Engg. & Tech.</span>
-                                <div className="qualification__calendar-alt">
+                                <h3 className="qualification__title">Samsi Agril High School</h3>
+                                <span className="qualification__subtitle">Samsi, Malda, West Bengal</span>
+                                <div className="qualification__calendar">
+                                    <i className="uil uil-calendar-alt"></i>
+                                    2023 Present
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="qualification__data">
+                            <div className="">
+                                <h3 className="qualification__title">Chorolmoni High School</h3>
+                                <span className="qualification__subtitle">Chorolmoni, Malda, West Bengal</span>
+                                <div className="qualification__calendar">
                                     <i className="uil uil-calendar-alt"></i>
                                     2023 Present
                                 </div>
@@ -46,46 +62,12 @@ const Qualification = () => {
                         
                         <div>
                             <span className="qualification__rounder"></span>
-                            <div className="qualification__line"></div>
+                            <span className="qualification__line"></span>
                         </div>
                         </div>
-
-                        <div className="qualification__data">
-                            <div className="">
-                                <h3 className="qualification__subtitle"></h3>
-                                <span className="qualification__subtitle">Samskruti College of Engg. & Tech.</span>
-                                <div className="qualification__calendar-alt">
-                                    <i className="uil uil-calendar-alt"></i>
-                                    2023 Present
-                                </div>
-                            </div>
-                        
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <div className="qualification__line"></div>
-                        </div>
-                        </div>
-
-                        <div className="qualification__data">
-                            <div className="">
-                                <h3 className="qualification__subtitle"></h3>
-                                <span className="qualification__subtitle">Samskruti College of Engg. & Tech.</span>
-                                <div className="qualification__calendar-alt">
-                                    <i className="uil uil-calendar-alt"></i>
-                                    2023 Present
-                                </div>
-                            </div>
-                        
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <div className="qualification__line"></div>
-                        </div>
-                        </div>
-
-                    </div>
                 </div>
-
             </div>
+        </div>
         </section>
         </div>
     );

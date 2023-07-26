@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./Header.css"
 
 
 
 
 const Header = () =>{
+
+    const [activeNav, setActiveNav] = useState("#home")
+    
     return(
         <header className='header'>
             <nav className='nav container'>
@@ -31,13 +34,20 @@ const Header = () =>{
                         </li>
 
                         <li className='nav__item'>
-                            <a href="#projects" className="nav__link">
+                            <a href="#qualification" className="nav__link">
+                                <i className="uil uil-book nav__icon"></i>Qualification
+                            </a>
+                        </li>
+
+                        <li className='nav__item'>
+                            <a href="#projects" onClick={() => setActiveNav("#projects")} 
+                            className={activeNav === "#projets" ? "nav__link active-link" :"nav__link"}>
                                 <i className="uil uil-suitcase nav__icon"></i>Projects
                             </a>
                         </li>
 
                         <li className='nav__item'>
-                            <a href="#projects" className="nav__link">
+                            <a href="#contact" className="nav__link">
                                 <i className="uil uil-at nav__icon"></i>Contact
                             </a>
                         </li>
