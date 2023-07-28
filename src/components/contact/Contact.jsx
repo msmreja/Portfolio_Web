@@ -1,7 +1,28 @@
-import React from 'react';
-import './contact.css'
+import React, {useRef} from 'react';
+import './contact.css';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+
+        const form = useRef();
+
+        const sendEmail = (e) => {
+            e.preventDefault();
+            emailjs.sendForm(
+                'service_qgjce89', 
+                'template_0vl3xgk', 
+                form.current, 
+                'xbMyPTRu2ydI7v_8s')
+                .then((result) => {
+                    console.log(result.text);
+                    alert("Your Message is Sent..!")
+                }, (error) => {
+                    alert("Error.!! Internal Servar Error Please Try After Some Time..!")
+                    console.log(error.text);
+                });
+            e.target.reset()
+        };
+
     return (
         <section className="contact section" id="contact">
             <h2 className="section__title">Say Hi!!</h2>
@@ -9,7 +30,7 @@ const Contact = () => {
 
             <div className="contact__container container grid">
                 <div className="contact__content">
-                    <h3 className="contact__title">Talk To Me</h3>
+                    <h3 className="contact__title">Talk with me..!</h3>
 
                     <div className="contact__info">
                         <div className="contact__card">
@@ -34,7 +55,6 @@ const Contact = () => {
                             <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
                         </div>
-
                         <div className="contact__card">
                             <i className="bx bx__contact card-icon"></i>
 
@@ -51,7 +71,7 @@ const Contact = () => {
 
                 <div className="contact__content">
                         <h3 className="contact__title">Write me...!!</h3>
-                        <form className="contact__form">
+                        <form ref={form} onSubmit={sendEmail} className="contact__form">
                             <div className="contact__form-div">
                                 <label htmlFor="" className="contact__form-tag">Name</label>
                                 <input type="text" name="name" className="contact__form-input" placeholder="Enter Your Name" />
@@ -59,16 +79,16 @@ const Contact = () => {
 
                             <div className="contact__form-div">
                                 <label htmlFor="" className="contact__form-tag">Email</label>
-                                <input type="email" name="name" className="contact__form-input" placeholder="Enter Your Email" />
+                                <input type="email" name="email" className="contact__form-input" placeholder="Enter Your Email" />
                             </div>
 
                             <div className="contact__form-div contact__form-area">
-                                <label htmlFor="" className="contact__form-tag">Your Messege</label>
-                                <textarea rows='10' cols='35' className='contact__form-input' placeholder='Write Your Messege'></textarea>
+                                <label htmlFor="" className="contact__form-tag">Your Message</label>
+                                <textarea name='message' rows='10' cols='35' className='contact__form-input' placeholder='Write Your Messege'></textarea>
                             </div>
 
-                            <a href="#contact" className="button button--flex">
-                                Contact me
+                            <button className="button button--flex">
+                                Send Message
                                 <svg
                                     className="button__icon"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -86,8 +106,7 @@ const Contact = () => {
                                         fill="var(--container-color)"
                                     ></path>
                                 </svg>
-                            </a>
-
+                            </button>
                         </form>
                 </div>
             </div>
