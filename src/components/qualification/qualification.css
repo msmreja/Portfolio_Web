@@ -76,6 +76,13 @@
     background-color: var(--text-color);
     transform: translate(6px, -7px);
 }
+.section__subtitle-qualification{
+    display: block;
+    text-align: center;
+    font-size: var(--small-font-size);
+    margin-bottom: 0.5rem;
+}
+
 /* Break Points */
 @media screen and (max-width: 992px) {
     .qualification__container {

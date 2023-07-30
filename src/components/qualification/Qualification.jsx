@@ -3,10 +3,9 @@ import './qualification.css'
 
 const Qualification = () => {
     return (
-        <div>
-        <section className="qualification__section">
+        <section className="qualification__section" id='qualification'>
             <h2 className="section__title">Qualification</h2>
-            <span className="section__subtitle">My Journey</span>
+            <span className="section__subtitle-qualification">My Journey</span>
             <div className="qualification__container container">
                 <div className="qualification__tabs">
                     <div className="qualification__button qualification__active button--flex">
@@ -22,7 +21,7 @@ const Qualification = () => {
                                 <span className="qualification__subtitle">Ghatkesar, Hyderabad</span>
                                 <div className="qualification__calendar">
                                     <i className="uil uil-calendar-alt"></i>
-                                    2023 Present
+                                    2023
                                 </div>
                             </div>
                         
@@ -45,7 +44,7 @@ const Qualification = () => {
                                 <span className="qualification__subtitle">Samsi, Malda, West Bengal</span>
                                 <div className="qualification__calendar">
                                     <i className="uil uil-calendar-alt"></i>
-                                    2023 Present
+                                    2019
                                 </div>
                             </div>
                         </div>
@@ -56,7 +55,7 @@ const Qualification = () => {
                                 <span className="qualification__subtitle">Chorolmoni, Malda, West Bengal</span>
                                 <div className="qualification__calendar">
                                     <i className="uil uil-calendar-alt"></i>
-                                    2023 Present
+                                    2019
                                 </div>
                             </div>
                         
@@ -69,7 +68,6 @@ const Qualification = () => {
             </div>
         </div>
         </section>
-        </div>
     );
 };
 

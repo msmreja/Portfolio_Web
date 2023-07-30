@@ -7,9 +7,14 @@ const ProjectItems = ({item}) => {
             <img src={item.image} alt='' className='work__img'></img>
             <h3 className="work__title">{item.title}</h3>
             <button onClick={console.log("Pop UP")} className='work__button'>
-                Details <i className="bx bx-right-arrow-alt work__button-icon"></i>
+                <PopOver 
+                title={item.title} 
+                description={item.description} 
+                gitlink={item.gitLink} 
+                frontend={item.frontend} 
+                backend={item.backend}
+                />
             </button>
-            <PopOver />
         </div>
     );
 };

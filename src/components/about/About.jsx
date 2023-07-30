@@ -17,7 +17,8 @@ function about(props) {
                 <div className="about__data">
                     <Info />
 
-                    <p className="about__description">I have created WebPages which have great style and design</p>
+                    <p className="about__description"> I possess a unique combination of skills and experience.
+                                                        I hold a Bachelor's degree and I have further honed my skills through practical experience,continuous learning, various projects.</p>
                     <a download={'Masum Reja_Resume'} href={CV} className='button buttn-flex'>Download Resume
                     <svg
                             class="button__icon"

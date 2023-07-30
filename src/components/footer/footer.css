@@ -46,3 +46,12 @@
 .footer__social-link:hover {
     background-color: var(--title-color-dark);
 }
+
+
+@media screen and (max-width) {
+    .footer__social-link {
+        padding: 0.25em;
+        border-radius: 0.25rem;
+        font-style: 1rem;
+    }
+}

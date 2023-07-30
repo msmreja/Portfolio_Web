@@ -7,30 +7,43 @@ function PopOver(props) {
   const toggle = () => setModal(!modal);
 
   return (
-    <div>
-      <Button color="danger" onClick={toggle}>
+    <div className=''>
+      <Button color="dark" onClick={toggle}>
         Details
+        <i className="bx bx-right-arrow-alt work__button-icon"></i>
       </Button>
+      <div className="modal__container">
       <Modal isOpen={modal} toggle={toggle} fullscreen>
-        <ModalHeader toggle={toggle}>Modal title</ModalHeader>
+        <ModalHeader toggle={toggle}>{props.title}</ModalHeader>
         <ModalBody>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+        <strong> 
+          Project Overview:</strong><br/>
+          {props.description}
+          <div className="tech__components">
+          <strong>Technologies Used:</strong>
+          <br />
+          &emsp;&emsp;&emsp;  
+          <strong>Frontend:</strong>
+          {props.frontend}
+          <br />
+          &emsp;&emsp;&emsp;
+          <strong>Backend:</strong>
+          {props.backend}
+          </div>
         </ModalBody>
         <ModalFooter>
+          <a href={props.gitlink} target='_blank'>
           <Button color="primary" onClick={toggle}>
-            Do Something
-          </Button>{' '}
+            <i className="uil uil-github"> </i>
+            GitHub Link
+          </Button></a>
+          {' '}
           <Button color="secondary" onClick={toggle}>
-            Cancel
+            Close
           </Button>
         </ModalFooter>
       </Modal>
+      </div>
     </div>
   );
 }

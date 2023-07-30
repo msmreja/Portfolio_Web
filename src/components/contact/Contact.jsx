@@ -34,34 +34,30 @@ const Contact = () => {
 
                     <div className="contact__info">
                         <div className="contact__card">
-                            <i className="bx bx__contact card-icon"></i>
-
-                            <h3 className="contact__card-title">Email</h3>
                             <i className="bx bx-mail-send contact__card-icon"></i>
-                            <span className="contact__card-data">msmreja@gmail.com</span>
+                            <h3 className="contact__card-title">Email</h3>
+                            <span className="contact__card-data">msmreja@gmail.com</span><br />
 
-                            <a href="" className="contact__button">Write Me 
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=msmreja@gmail.com&su=&body=&bcc="  target='_blank' className="contact__button">Write to Me 
                             <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
                         </div>
 
                         <div className="contact__card">
-                            <i className="bx bx__contact card-icon"></i>
+                        <i className="bx bx-mail-send contact__card-icon"></i>
 
                             <h3 className="contact__card-title">WhatsApp</h3>
-                            <span className="contact__card-data">+91 888888888</span>
-
-                            <a href="" className="contact__button">Write Me 
+                            <span className="contact__card-data"></span><br />
+                            <a href="http://wa.me/919734108764" className="contact__button" target='blank_'>Write to Me 
                             <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
                         </div>
                         <div className="contact__card">
-                            <i className="bx bx__contact card-icon"></i>
+                        <i className="bx bx-mail-send contact__card-icon"></i>
 
                             <h3 className="contact__card-title">Messenger</h3>
-                            <span className="contact__card-data">msmreja@msg</span>
-
-                            <a href="" className="contact__button">Write Me 
+                            <span className="contact__card-data"></span><br />
+                            <a href="" className="contact__button">Write to Me 
                             <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
                         </div>
@@ -74,17 +70,17 @@ const Contact = () => {
                         <form ref={form} onSubmit={sendEmail} className="contact__form">
                             <div className="contact__form-div">
                                 <label htmlFor="" className="contact__form-tag">Name</label>
-                                <input type="text" name="name" className="contact__form-input" placeholder="Enter Your Name" />
+                                <input required type="text" name="name" className="contact__form-input" placeholder="Enter Your Name" />
                             </div>
 
                             <div className="contact__form-div">
                                 <label htmlFor="" className="contact__form-tag">Email</label>
-                                <input type="email" name="email" className="contact__form-input" placeholder="Enter Your Email" />
+                                <input required type="email" name="email" className="contact__form-input" placeholder="Enter Your Email" />
                             </div>
 
                             <div className="contact__form-div contact__form-area">
                                 <label htmlFor="" className="contact__form-tag">Your Message</label>
-                                <textarea name='message' rows='10' cols='35' className='contact__form-input' placeholder='Write Your Messege'></textarea>
+                                <textarea required name='message' rows='10' cols='35' className='contact__form-input' placeholder='Write Your Messege'></textarea>
                             </div>
 
                             <button className="button button--flex">
