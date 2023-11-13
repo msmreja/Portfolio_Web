@@ -34,6 +34,7 @@
 }
 
 .work__img {
+    max-height: 250px;
     width: 295px;
     border-radius: 1rem;
     margin-bottom: var(--mb-1);
