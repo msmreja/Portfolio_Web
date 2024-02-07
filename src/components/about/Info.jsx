@@ -12,7 +12,7 @@ function Info(props) {
           </span>
         </div>
         <div className="about__box">
-          <h3 className="about__title">Jont Secretery</h3>
+          <h3 className="about__title">Joint Secretery</h3>
           <span className="about__subtilte">
             {" "}
             E-cell, Samskruti College of Engg. & Tech.
