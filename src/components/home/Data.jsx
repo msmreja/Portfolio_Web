@@ -57,8 +57,9 @@ const Data = () => {
       </h1>
       <h3 className="home__subtitle">I'm Not only a Coder</h3>
       <p className="home__description">
-        I'm an Enthusiastic and Creative Person, Very Passionate and dedicated
-        to Learning new skills and implementing those into real world.
+        I'm an enthusiastic and creative person who is very passionate and
+        dedicated to learning new skills and implementing them in the real
+        world. I have 1 year of experience as a full-stack developer.
       </p>
       <br />
       <a href="#contact" className="button button--flex">

@@ -5,7 +5,9 @@ const Qualification = () => {
   return (
     <section className="qualification__section" id="qualification">
       <h2 className="section__title">Qualification</h2>
-      <span className="section__subtitle-qualification">My Journey</span>
+      <span className="section__subtitle-qualification">
+        My Academical Journey
+      </span>
       <div className="qualification__container container">
         <div className="qualification__tabs">
           <div className="qualification__button qualification__active button--flex">

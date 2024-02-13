@@ -8,6 +8,7 @@ import Qualification from "./components/qualification/Qualification";
 import Project from "./components/projects/Project";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import Experience from "./components/experience/Experience";
 
 import Container from "react-bootstrap/Container";
 import "./App.css";
@@ -16,12 +17,13 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <Container>
+    <Container className="">
       <Header />
       <main className="main">
         <Home />
         <About />
         <Skills />
+        <Experience />
         <Qualification />
         <Project />
         <Contact />
