@@ -1,3 +1,12 @@
+.qualification__section {
+    display: grid;
+    justify-content: center ;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 3rem 4rem;
+    border-radius: 1.25rem;
+    padding: 6rem 0 2rem;
+}
+
 .qualification__container {
     max-width: 768px;
 }
@@ -28,13 +37,6 @@
     color: var(--title-color--dark);
 }
 
-.qualification__section {
-    display: grid;
-    justify-content: center ;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 3rem 4rem;
-    border-radius: 1.25rem;
-}
 
 .qualifation__content-active{
     display: block;

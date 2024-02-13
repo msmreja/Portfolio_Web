@@ -3,12 +3,12 @@ import "./experience.css";
 
 const Experience = () => {
   return (
-    <section className="qualification__section" id="experience">
+    <section className="section" id="experience">
       <h2 className="section__title">Experience</h2>
       <span className="section__subtitle-qualification">
         My Professional Journey
       </span>
-      <div className="qualification__container container">
+      <div className="qualification__container qualification__section  container">
         <div className="qualification__tabs">
           <div className="qualification__button qualification__active button--flex">
             <i className="uil uil-graduation-cap qualifaction__icon"></i>{" "}
