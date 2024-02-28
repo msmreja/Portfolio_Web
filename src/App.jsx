@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import Home from "./components/home/Home";
 import Header from "./components/header/Header";
@@ -14,7 +14,30 @@ import Container from "react-bootstrap/Container";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [showScrollButton, setShowScrollButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.pageYOffset > 0) {
+        setShowScrollButton(true);
+      } else {
+        setShowScrollButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <Container className="">
@@ -28,6 +51,12 @@ function App() {
         <Project />
         <Contact />
       </main>
+      {/* Scroll to top button */}
+      {showScrollButton && (
+        <button className="scroll-to-top-btn" onClick={scrollToTop}>
+          ↑
+        </button>
+      )}
       <Footer />
     </Container>
   );
