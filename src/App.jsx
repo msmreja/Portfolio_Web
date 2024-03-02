@@ -51,7 +51,6 @@ function App() {
         <Project />
         <Contact />
       </main>
-      {/* Scroll to top button */}
       {showScrollButton && (
         <button className="scroll-to-top-btn" onClick={scrollToTop}>
           ↑

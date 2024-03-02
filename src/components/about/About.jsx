@@ -20,7 +20,7 @@ function about(props) {
           <p className="about__description">
             I possess a unique combination of skills and experience.I hold a
             Bachelor's degree and I have further honed my skills through
-            practical experience,continuous learning, various projects.
+            practical experience,continuous learning and various projects.
           </p>
           <a
             download={"Masum Reja_Resume"}
